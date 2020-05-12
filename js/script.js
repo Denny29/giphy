@@ -20,8 +20,8 @@ $("#search-button").click(function(){
     .then(function(response) {
           console.log(response);
           response.data[0].url
-          console.log(response.data[0].images['480w_still'].url);
-          $(".result").html(`<img id='result' src="${response.data[0].images['480w_still'].url}">`);
+          console.log(response.data[0].images['downsized'].url);
+          $(".result").html(`<img id='result' src="${response.data[0].images['downsized'].url}">`);
   	})
       
 });
